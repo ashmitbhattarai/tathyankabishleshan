@@ -1,0 +1,168 @@
+{%load static%}
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Tathyanka Bishleshan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="{%static "assets/css/main.css" %}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<div id="topBar">	
+				<!--Top-Navigation with search bar -->
+					<form id="searchthis-top" action="/search" style="display:inline-block;" method="get">
+								<select id = "top_box" style="display:inline-block;width:200px;">
+									<option class = "selected">Names</option>
+									<option>Organization</option>
+									<option>Places</option>
+									<option>Miscs</option>
+								</select>
+									<input id="namanyay-search-box-top" size="50" type="text"/>
+								<input id="namanyay-search-btn-top" value="Search" type="submit"/>
+					</form>			
+				</div>
+
+          		<nav class="content_menu">
+                <ul class="bmenu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" class="selected">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </nav>
+                    
+            <!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							
+							<header>
+
+									<img id="logo" src="{%static "images/logo.png" alt="Tathyanka Bishleshan" width="140"	height="140" %}">
+
+								<!--Search-box -->
+                              									
+							<form id="searchthis" action="/search" style="display:inline;" method="get">
+
+								<div style="position:relative; z-index:5;">
+									<!-- Search box for blogger by Namanyay Goel //-->
+									<input id="namanyay-search-box" size="50" type="text" placeholder=" Search Anything Here !!"/>
+
+								</div>
+										<!-- Nav -->
+										<nav id="search_nav">
+											<ul>
+												<li><a href="/home" >All</a></li>
+												<li><a href="#" class = "selected">Names</a></li>
+												<li><a href="#">Organization</a></li>
+												<li ><a href="#" >Places</a></li>
+												<li><a href="#">Miscs</a></li>
+											</ul>
+										</nav>
+									<input id="namanyay-search-btn" value="Search" type="submit"/>
+							</form>									
+                        </header>
+                          
+					</div>
+
+				</div>
+       
+			<!-- Banner -->
+				<section id="banner">
+					<div id="bannerLoader">
+					<h3 align="center"> Searching Data..</h3></br>
+						<img src="{%static "images/loader.gif" %}">
+						
+					</div>
+					<header id="bannerHeader">
+						<h1 id = "search tag"><strong>Search Result:</strong></h1> <br><br>
+
+						<div id="container" style="min-width: 750px; height: 400px; max-width: 500px; display: inline-block" ></div>
+						<div id="container2" style="min-width: 750px; height: 400px; max-width: 400px; display: inline-block"></div>
+						<br>
+						<br><br>
+						<div class="positive-negative">
+							<table style="width: 45%" align="left"; display="inline-block" >
+								<td>
+									<h3 style="color:#040696;"><b>POSITIVE SENTENCES</b></h4><br>
+									<ul id = "pos"></ul>
+								</td>
+							</table>
+
+							<table style="width: 50%">
+								<td>
+									<h3 style="color:#c32929;"><b>NEGATIVE SENTENCES</b></h3><br>
+									<ul id = "neg">
+									</ul>
+								</td>
+							</table>
+						</div>
+					</header>
+				</section>
+
+			<!-- Footer -->
+				<div id="footer">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contact?</h3>
+
+										</header>
+										<p>Use following Social Networks to connect with us.</p>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Tathyanka Bishleshan. All rights reserved.</li><li>Design: 
+                                            <a href="http://the9geek.com">GUNNER</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+				
+				</div>
+
+		</div>
+		
+
+		<!-- Scripts -->
+			<script src="{%static "assets/js/jquery.min.js" %}"></script>
+			<script src="{%static "assets/js/jquery.min.pie.js" %}"></script>
+			<script src="{%static "assets/js/jquery.dropotron.min.js"%}"></script>
+			<script src="{%static "assets/js/jquery.scrolly.min.js"%}"></script>
+			<script src="{%static "assets/js/jquery.onvisible.min.js"%}"></script>
+			<script src="{%static "assets/js/skel.min.js"%}"></script>
+			<script src="{%static "assets/js/util.js"%}"></script>
+			<!--[if lte IE 8]><script src="{%static "assets/js/ie/respond.min.js"%}"></script><![endif]-->
+			<script src="{%static "assets/js/main.js"%}"></script>
+			<script src="{%static "assets/js/navmenu.js" %}"></script>
+			<script src="{%static "assets/js/search.js"%}"></script>
+
+			<!-- Hicharts -->
+			<script type="text/javascript"
+        		src="{%static "assets/js/pie-simple.js" %}">
+			</script>
+			<script src="{%static "assets/js/highcharts.js" %}"></script>
+			<script src="{%static "assets/js/exporting.js" %}"></script>
+			<script src="{%static "assets/js/line.js" %}"></script>
+
+	</body>
+</html>
+
